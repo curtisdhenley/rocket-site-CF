@@ -1,0 +1,120 @@
+:root {
+    --cf-dark: #212121;
+    --cf-light: #ebebeb;
+    --cf-darkblue: #00223d;
+    --cf-highlight: #fae100;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cf-darkblue);
+    background-image: url("/img/LandingPage_576.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+/* navbar styling */
+.navbar-brand {
+    color: var(--cf-light);
+}
+
+/* main content */
+h1 {
+    line-height: 1.7rem;
+    font-size: 2.8rem;
+}
+
+.cta-title {
+    color: var(--cf-light);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Racing Sans One', sans-serif;
+}
+
+.cta-subtitle {
+    letter-spacing: .1rem;
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--cf-light);
+}
+
+.cta-btn {
+    background-color: var(--cf-highlight);
+}
+
+/* -------------------------------------- MEDIA QUERIES -------------------------------------- */
+/* Small devices (portrait phones, 375px and up) */
+@media (min-width: 375px) {
+
+    body {
+        background-image: url(/img/LandingPage_576.png);
+        background-position: top center;
+    }
+
+    .content {
+        align-items: flex-end;
+        margin-left: 1rem;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    body {
+        background-image: url(/img/LandingPage_768.png);
+        background-position: top center;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    body {
+            background-image: url(/img/LandingPage_992.png);
+        }
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    body {
+            background-image: url(/img/LandingPage_1200.png);
+        }
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    body {
+            background-image: url(/img/LandingPage_1400.png);
+        }
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+    body {
+            background-image: url(/img/LandingPage_1920.png);
+        }
+    
+}
